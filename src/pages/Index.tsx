@@ -30,26 +30,26 @@ const Index = () => {
 
   const gallery = [
     {
-      url: 'https://cdn.poehali.dev/projects/7fdfeb24-8ac2-4c23-9a81-2becb357823c/files/718ded12-78ef-475e-a94d-b185e9e90a6d.jpg',
-      alt: 'Новогодняя ёлка'
+      url: 'https://cdn.poehali.dev/projects/7fdfeb24-8ac2-4c23-9a81-2becb357823c/files/7b8309f9-2125-4c77-b1c6-2972b93963ff.jpg',
+      alt: 'Зимний лес'
     },
     {
-      url: 'https://cdn.poehali.dev/projects/7fdfeb24-8ac2-4c23-9a81-2becb357823c/files/8ba2476d-04ec-4433-978f-6b6b38bbf44d.jpg',
-      alt: 'Праздничный стол'
+      url: 'https://cdn.poehali.dev/projects/7fdfeb24-8ac2-4c23-9a81-2becb357823c/files/fef1d3a5-1e97-4425-809f-5eb77a55c2e0.jpg',
+      alt: 'Снежная тропа'
     },
     {
-      url: 'https://cdn.poehali.dev/projects/7fdfeb24-8ac2-4c23-9a81-2becb357823c/files/8c48f116-5eee-41c3-8868-57f56626945d.jpg',
-      alt: 'Рождественские украшения'
+      url: 'https://cdn.poehali.dev/projects/7fdfeb24-8ac2-4c23-9a81-2becb357823c/files/1e556a13-a110-4aa6-94d5-5e335cfce0d2.jpg',
+      alt: 'Морозное утро'
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-red-50/30 via-white to-green-50/20">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50/40 via-slate-50 to-teal-50/30">
       <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         
         <section className="text-center mb-20 animate-fade-in">
           <div className="inline-flex items-center justify-center mb-6">
-            <span className="text-6xl">🎄</span>
+            <span className="text-6xl">🌲</span>
           </div>
           <h1 className="font-heading text-5xl sm:text-6xl font-bold text-primary mb-6 tracking-tight">
             С Новым Годом!
@@ -68,7 +68,7 @@ const Index = () => {
             {wishes.map((wish, index) => (
               <Card 
                 key={index}
-                className="p-6 hover:shadow-lg transition-all duration-300 border-primary/20 hover:border-primary/40 bg-white shadow-sm animate-fade-in"
+                className="p-6 hover:shadow-xl transition-all duration-300 border-accent/30 hover:border-accent/50 bg-gradient-to-br from-white to-blue-50/20 shadow-md animate-fade-in"
                 style={{ 
                   animationDelay: `${0.3 + index * 0.1}s`,
                   opacity: 0,
@@ -76,8 +76,8 @@ const Index = () => {
                 }}
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
-                    <Icon name={wish.icon} className="text-accent" size={24} />
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-accent/30 to-primary/30 flex items-center justify-center shadow-sm">
+                    <Icon name={wish.icon} className="text-primary" size={24} />
                   </div>
                   <div className="flex-1">
                     <h3 className="font-heading text-xl font-semibold text-primary mb-2">
@@ -136,11 +136,11 @@ const Index = () => {
           </div>
         )}
 
-        <footer className="mt-20 pt-10 border-t border-primary/20 text-center">
+        <footer className="mt-20 pt-10 border-t border-accent/30 text-center">
           <div className="flex items-center justify-center gap-2 text-muted-foreground font-light">
-            <span>🎅</span>
+            <span>🌲</span>
             <p>С наилучшими пожеланиями</p>
-            <span>🎁</span>
+            <span>❄️</span>
           </div>
         </footer>
       </div>
