@@ -9,9 +9,9 @@
     --background: 0 0% 100%;
     --foreground: 220 13% 13%;
 
-    --forest-dark: 195 30% 25%;
-    --forest-green: 160 35% 45%;
-    --winter-blue: 200 60% 85%;
+    --snow-blue: 210 100% 95%;
+    --ice-blue: 200 80% 75%;
+    --frost-blue: 215 60% 60%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -19,7 +19,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 195 30% 25%;
+    --primary: 215 60% 60%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
@@ -28,8 +28,8 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 160 35% 45%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 200 80% 75%;
+    --accent-foreground: 220 30% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
